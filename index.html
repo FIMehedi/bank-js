@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Js</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Login Area Start -->
+    <section id="login-area" class="pt-5">
+        <h1 class="text-center p-5">Welcome to Bank Js</h1>
+        <div class="container p-5 login-form rounded">
+            <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <button id="login" class="btn btn-success">Submit</button>
+        </div>
+    </section>
+    <!-- Login Area End -->
+    <!-- Transaction Area Start -->
+    <section id="transaction-area" class="container pt-5">
+        <div class="row pt-5">
+            <div class="col-md-4">
+                <div class="status deposit">
+                    <h5>Deposit</h5>
+                    <h2>$ <span id="current-deposit">00</span></h2>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="status withdraw">
+                    <h5>Withdraw</h5>
+                    <h2>$ <span id="current-withdraw">00</span></h2>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="status balance">
+                    <h5>Balance</h5>
+                    <h2>$ <span id="current-balance">1200</span></h2>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-6">
+                <div class="deposit-area">
+                    <h3>Deposit</h3>
+                    <input type="text" id="deposit-amount" class="form-control" placeholder="$ Amount you want to Deposit">
+                    <br>
+                    <button id="deposit-btn" class="btn btn-success">Deposit</button>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="withdraw-area">
+                    <h3>Withdraw</h3>
+                    <input type="text" id="withdraw-amount" class="form-control" placeholder="$ Amount you want to Withdraw">
+                    <br>
+                    <button id="withdraw-btn" class="btn btn-success">Withdraw</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Transaction Area End -->
+
+    <script src="js/main.js"></script>
+</body>
+</html>
